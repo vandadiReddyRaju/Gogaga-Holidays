@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-image {
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.hotel-image{
+    width: 70%;
+    max-width: 200px;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        width:100%;
+        max-width: 300px; 
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-image {
+        max-width: 300px; 
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .header-image {
+        max-width: 300px; 
+    }
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.company{
+    height:20vh;
+    width : 100vw;
+}
+
+
+.package,
+.hotel,
+.collection {
+
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 80vw;
+    margin-bottom: 10px;
+}
+
+.package:hover,
+.hotel:hover,
+.collection:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .package,
+    .hotel,
+    .collection {
+        width: calc(50% - 1rem);
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .package,
+    .hotel,
+    .collection {
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+}
+
+.footer-container{
+    background-image:url("./images/Footer background.png");
+    background-size: cover;
+    margin: 0px;
+}
+
+footer {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.company-info {
+    margin-right: 2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    color: white;
+    font-size: 18px;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ccc;
+}
